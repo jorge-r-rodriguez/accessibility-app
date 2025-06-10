@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <span class="nav__logo">
+        <img src="/img/logo.svg" alt="Logo" />
+      </span>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <img src="/img/burgerMenu.svg" />
+      </button>
+      <ul class="nav__links">
+        <li class="nav__link-item nav__link-item--active">
+          <a href="/" class="nav__link" aria-label="Aventura" role="button">
+            <img src="/img/icon_adventure.svg" alt="Aventura" />
+            <span>Aventura</span>
+          </a>
+        </li>
+        <li class="nav__link-item" aria-label="Destinos">
+          <a href="/" class="nav__link">
+            <img src="/img/icon_world.svg" alt="Destinos" />
+            <span>Destinos</span>
+          </a>
+        </li>
+        <li class="nav__link-item" aria-label="Alojamientos">
+          <a href="/" class="nav__link">
+            <img src="/img/icon_house.svg" alt="Alojamientos" />
+            <span>Alojamientos</span>
+          </a>
+        </li>
+        <li class="nav__link-item" aria-label="Sobre Nosotros">
+          <a href="/" class="nav__link">
+            <span>Sobre Nosotros</span>
+          </a>
+        </li>
+      </ul>
+      <button class="nav__button">Reserva</button>
+    </nav>
+    <!-- Carousel -->
+    <header>
+      <section class="hero-carousel">
+        <div class="carousel">
+          <div class="carousel__slides">
+            <div
+              class="carousel__slide"
+              style="background-image: url('/img/fondo.png')"
+            >
+              <div class="carousel__content">
+                <h2>Aventura en la montaña</h2>
+                <p>Explora lo salvaje con nosotros.</p>
+                <button class="cta">Mas información</button>
+              </div>
+            </div>
+            <div
+              class="carousel__slide"
+              style="background-image: url('/img/fondo.png')"
+            >
+              <div class="carousel__content">
+                <h2>Descubre el mundo</h2>
+                <p>Viajes personalizados a cualquier destino.</p>
+                <button class="cta">Mas información</button>
+              </div>
+            </div>
+            <div
+              class="carousel__slide"
+              style="background-image: url('/img/fondo.png')"
+            >
+              <div class="carousel__content">
+                <h2>Alojamientos únicos</h2>
+                <p>Hospédate donde empieza la aventura.</p>
+                <button class="cta">Mas información</button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel__nav carousel__nav--prev"
+            aria-label="Anterior"
+          >
+            <img src="/img/chevron-left.svg" />
+          </button>
+          <button
+            class="carousel__nav carousel__nav--next"
+            aria-label="Siguiente"
+          >
+            <img src="/img/chevron-right.svg" />
+          </button>
+          <div class="carousel__dots"></div>
+        </div>
+      </section>
+    </header>
+    <!-- Carousel END-->
+
+    <section class="intro">
+      <h1>Vive tus propias aventuras</h1>
+      <p>Para los que les gusta explorar y conocer mundo sin complejos</p>
+    </section>
+
+    <section class="layout">
+      <div class="filters-toogle">
+        <button
+          class="filters-toogle-button"
+          aria-label="Abrir filtros"
+          aria-expanded="false"
+        >
+          <span><img src="/img/filters.svg" /></span>
+          <span>Ver Filtros</span>
+        </button>
+      </div>
+      <!-- Filters -->
+      <section class="layout__grid">
+        <aside
+          class="filters-wrapper"
+          data-visible="false"
+          aria-label="Filtrar por actividad"
+        >
+          <header>
+            <h2>Filtrar mi búsqueda</h2>
+            <span class="filters__close-button"
+              ><button id="close-bilters-button">
+                <img src="/img/close.svg" /></button
+            ></span>
+          </header>
+          <div class="separator"></div>
+          <form id="form-filters" class="form-filters">
+            <details class="form-filters__section">
+              <summary class="form-filters__summary">
+                <span
+                  class="form-filters__icon"
+                  style="--icon-url: url('/img/icon_world.svg')"
+                ></span>
+                Destinos
+              </summary>
+              <fieldset class="form-filters__fieldset">
+                <legend class="sr-only">Filtrar por destino</legend>
+
+                <label class="form-filters__checkbox">
+                  <input
+                    type="checkbox"
+                    name="destination"
+                    value="asia"
+                    class="form-filters__checkbox-input"
+                  />
+                  <span class="form-filters__checkbox-custom"></span>
+                  <span class="form-filters__checkbox-label">Asia</span>
+                  <span class="tooltip">
+                    <span class="tooltip__text">Loremp ipsum </span>
+                    <span class="tooltip__icon"
+                      ><img src="/img/icon-info.svg"
+                    /></span>
+                  </span> </label
+                ><br />
+
+                <label class="form-filters__checkbox">
+                  <input
+                    type="checkbox"
+                    name="destination"
+                    value="europe"
+                    class="form-filters__checkbox-input"
+                  />
+                  <span class="form-filters__checkbox-custom"></span>
+                  <span class="form-filters__checkbox-label">Europa</span>
+                  <span class="tooltip">
+                    <span class="tooltip__text">Loremp ipsum </span>
+                    <span class="tooltip__icon"
+                      ><img src="/img/icon-info.svg"
+                    /></span>
+                  </span> </label
+                ><br />
+
+                <label class="form-filters__checkbox">
+                  <input
+                    type="checkbox"
+                    name="destination"
+                    value="latinoamerica"
+                    class="form-filters__checkbox-input"
+                  />
+                  <span class="form-filters__checkbox-custom"></span>
+                  <span class="form-filters__checkbox-label"
+                    >Latinoamérica</span
+                  >
+                  <span class="tooltip">
+                    <span class="tooltip__text">Loremp ipsum</span>
+                    <span class="tooltip__icon"
+                      ><img src="/img/icon-info.svg"
+                    /></span>
+                  </span> </label
+                ><br />
+              </fieldset>
+            </details>
+
+            <details class="form-filters__section" open>
+              <summary class="form-filters__summary">
+                <span
+                  class="form-filters__icon"
+                  style="--icon-url: url('/img/icon_adventure.svg')"
+                ></span>
+                Actividad
+              </summary>
+              <fieldset class="form-filters__fieldset">
+                <legend class="sr-only">Filtrar por actividad</legend>
+
+                <label class="form-filters__checkbox">
+                  <input
+                    type="checkbox"
+                    name="activity"
+                    value="quads"
+                    class="form-filters__checkbox-input"
+                  />
+                  <span class="form-filters__checkbox-custom"></span>
+                  <span class="form-filters__checkbox-label">Quads</span>
+                  <span class="tooltip">
+                    <span class="tooltip__text">Loremp ipsum</span>
+                    <span class="tooltip__icon"
+                      ><img src="/img/icon-info.svg"
+                    /></span>
+                  </span> </label
+                ><br />
+
+                <label class="form-filters__checkbox">
+                  <input
+                    type="checkbox"
+                    name="activity"
+                    value="parapente"
+                    class="form-filters__checkbox-input"
+                  />
+                  <span class="form-filters__checkbox-custom"></span>
+                  <span class="form-filters__checkbox-label">Parapente</span>
+                  <span class="tooltip">
+                    <span class="tooltip__text">Loremp ipsum</span>
+                    <span class="tooltip__icon"
+                      ><img src="/img/icon-info.svg"
+                    /></span>
+                  </span> </label
+                ><br />
+
+                <label class="form-filters__checkbox">
+                  <input
+                    type="checkbox"
+                    name="activity"
+                    value="surf"
+                    class="form-filters__checkbox-input"
+                  />
+                  <span class="form-filters__checkbox-custom"></span>
+                  <span class="form-filters__checkbox-label">Surf</span>
+                  <span class="tooltip">
+                    <span class="tooltip__text">Loremp ipsum</span>
+                    <span class="tooltip__icon"
+                      ><img src="/img/icon-info.svg"
+                    /></span>
+                  </span> </label
+                ><br />
+              </fieldset>
+            </details>
+
+            <details class="form-filters__section">
+              <summary class="form-filters__summary">
+                <span
+                  class="form-filters__icon"
+                  style="--icon-url: url('/img/icon_house.svg')"
+                ></span>
+                Alojamiento
+              </summary>
+              <fieldset class="form-filters__fieldset">
+                <legend class="sr-only">Filtrar por alojamiento</legend>
+
+                <label class="form-filters__checkbox">
+                  <input
+                    type="checkbox"
+                    name="accommodation"
+                    value="hotel"
+                    class="form-filters__checkbox-input"
+                  />
+                  <span class="form-filters__checkbox-custom"></span>
+                  <span class="form-filters__checkbox-label">Hotel</span>
+                  <span class="tooltip">
+                    <span class="tooltip__text">Loremp ipsum</span>
+                    <span class="tooltip__icon"
+                      ><img src="/img/icon-info.svg"
+                    /></span>
+                  </span> </label
+                ><br />
+
+                <label class="form-filters__checkbox">
+                  <input
+                    type="checkbox"
+                    name="accommodation"
+                    value="department"
+                    class="form-filters__checkbox-input"
+                  />
+                  <span class="form-filters__checkbox-custom"></span>
+                  <span class="form-filters__checkbox-label">Departamento</span>
+                  <span class="tooltip">
+                    <span class="tooltip__text">Loremp ipsum</span>
+                    <span class="tooltip__icon"
+                      ><img src="/img/icon-info.svg"
+                    /></span>
+                  </span> </label
+                ><br />
+
+                <label class="form-filters__checkbox">
+                  <input
+                    type="checkbox"
+                    name="accommodation"
+                    value="house"
+                    class="form-filters__checkbox-input"
+                  />
+                  <span class="form-filters__checkbox-custom"></span>
+                  <span class="form-filters__checkbox-label">Casa</span>
+                  <span class="tooltip">
+                    <span class="tooltip__text">Loremp ipsum</span>
+                    <span class="tooltip__icon"
+                      ><img src="/img/icon-info.svg"
+                    /></span>
+                  </span> </label
+                ><br />
+              </fieldset>
+            </details>
+
+            <details class="form-filters__section">
+              <summary class="form-filters__summary">
+                <span
+                  class="form-filters__icon"
+                  style="--icon-url: url('/img/price-color.svg')"
+                ></span>
+                Precio
+              </summary>
+              <fieldset class="form-filters__fieldset">
+                <legend class="sr-only">Filtrar por precio</legend>
+
+                <label class="form-filters__price-input">
+                  <span class="form-filters__price-icon">
+                    <img src="/img/price-color.svg" alt="" />
+                  </span>
+                  <input
+                    id="minPrice"
+                    type="number"
+                    name="minPrice"
+                    placeholder="Mínimo"
+                    class="form-filters__input-number"
+                  />
+                </label>
+
+                <label class="form-filters__price-input">
+                  <span class="form-filters__price-icon">
+                    <img src="/img/price-color.svg" alt="" />
+                  </span>
+                  <input
+                    id="maxPrice"
+                    type="number"
+                    name="maxPrice"
+                    placeholder="Máximo"
+                    class="form-filters__input-number"
+                  /> </label
+                ><br />
+              </fieldset>
+            </details>
+          </form>
+        </aside>
+
+        <!-- Cards -->
+        <main>
+          <section id="cards-container" class="cards-grid"></section>
+        </main>
+      </section>
+    </section>
+
+    <!-- Popover details -->
+    <div
+      id="popover-details"
+      class="popover-details hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="titulo-details"
+    ></div>
+
+    <footer>
+      <div class="footer__logo-section"><img src="/img/logo.svg" /></div>
+      <div class="footer__copywright-section">
+        @2025 Waveless - Todos los derechos reservados.
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
