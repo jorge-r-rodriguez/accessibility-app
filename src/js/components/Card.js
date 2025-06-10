@@ -24,7 +24,7 @@ export class Card {
           <strong class="card__price-amount">${this.data.price} €</strong>
           </div>
           
-          <button aria-label="Ver detalles" class="card__see-details"><span>Ver detalles </span><img src="./img/chevron-down.svg" class="card__see-details-icon"></button>
+          <button aria-label="Ver detalles" class="card__see-details"><span>Ver detalles </span><img src="./img/chevron-down.svg" alt="Ver detalles" class="card__see-details-icon"></button>
         </span>
         <button aria-label="Reservar" class="card__button-reserve">Reservar</button>
       </footer>
