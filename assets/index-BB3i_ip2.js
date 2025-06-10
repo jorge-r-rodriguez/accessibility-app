@@ -33,7 +33,7 @@ var L=Object.defineProperty;var A=(o,e,i)=>e in o?L(o,e,{enumerable:!0,configura
           <strong class="card__price-amount">${this.data.price} €</strong>
           </div>
           
-          <button aria-label="Ver detalles" class="card__see-details"><span>Ver detalles </span><img src="./img/chevron-down.svg" alt="Ver detalles" class="card__see-details-icon"></button>
+          <button aria-label="Ver detalles" class="card__see-details"><span>Ver detalles </span><img src="./img/chevron-down.svg" alt="Ver detalles de precios" class="card__see-details-icon"></button>
         </span>
         <button aria-label="Reservar" class="card__button-reserve">Reservar</button>
       </footer>
