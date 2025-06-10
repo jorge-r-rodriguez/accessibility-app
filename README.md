@@ -66,6 +66,10 @@ npm run build
 - Contraste adecuado (pendiente de validación final con herramientas como Axe o Lighthouse).
 - Navegación por teclado soportada (revisar `main.js` para focus management).
 
+## 🚀 Demo en GitHub Pages
+
+[https://jorge-r-rodriguez.github.io/accessibility-app/](https://jorge-r-rodriguez.github.io/accessibility-app/)
+
 
 ## 📝 Licencia
 
