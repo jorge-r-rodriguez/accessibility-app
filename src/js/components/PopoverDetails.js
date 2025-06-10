@@ -14,7 +14,7 @@ export class PopoverDetails {
       <header>
         <strong>Desglose de precios</strong>
         <button class="popover-details__close">
-          <img src="/img/close.svg" aria-label="Cerrar ventana" alt="Cerrar">
+          <img src="./img/close.svg" aria-label="Cerrar ventana" alt="Cerrar">
         </button>
       </header>
       <section class="popover-details__content">
