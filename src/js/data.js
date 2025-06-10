@@ -2,7 +2,7 @@ export const data = [
   {
     title: "Descubre Bangkok",
     description: "Marruecos, África",
-    image: "/img/placeholder1.png",
+    image: "./img/placeholder1.png",
     price: 248.0,
     priceBase: 1124.0,
     taxes: 150.0,
@@ -15,7 +15,7 @@ export const data = [
   {
     title: "Aventura en el cielo",
     description: "Colombia",
-    image: "/img/placeholder2.png",
+    image: "./img/placeholder2.png",
     price: 199.0,
     priceBase: 980.0,
     taxes: 120.0,
@@ -28,7 +28,7 @@ export const data = [
   {
     title: "Surfea en Bali",
     description: "Indonesia",
-    image: "/img/placeholder3.png",
+    image: "./img/placeholder3.png",
     price: 270.0,
     priceBase: 1100.0,
     taxes: 160.0,
@@ -41,7 +41,7 @@ export const data = [
   {
     title: "Descubre Bangkok",
     description: "Marruecos, África",
-    image: "/img/placeholder1.png",
+    image: "./img/placeholder1.png",
     price: 248.0,
     priceBase: 1124.0,
     taxes: 150.0,
@@ -54,7 +54,7 @@ export const data = [
   {
     title: "Aventura en el cielo",
     description: "Colombia",
-    image: "/img/placeholder2.png",
+    image: "./img/placeholder2.png",
     price: 199.0,
     priceBase: 980.0,
     taxes: 120.0,
@@ -67,7 +67,7 @@ export const data = [
   {
     title: "Surfea en Bali",
     description: "Indonesia",
-    image: "/img/placeholder3.png",
+    image: "./img/placeholder3.png",
     price: 270.0,
     priceBase: 1100.0,
     taxes: 160.0,
@@ -80,7 +80,7 @@ export const data = [
   {
     title: "Surfea en Bali",
     description: "Indonesia",
-    image: "/img/placeholder3.png",
+    image: "./img/placeholder3.png",
     price: 270.0,
     priceBase: 1100.0,
     taxes: 160.0,
@@ -93,7 +93,7 @@ export const data = [
   {
     title: "Surfea en Bali",
     description: "Indonesia",
-    image: "/img/placeholder3.png",
+    image: "./img/placeholder3.png",
     price: 270.0,
     priceBase: 1100.0,
     taxes: 160.0,
@@ -106,7 +106,7 @@ export const data = [
   {
     title: "Surfea en Bali",
     description: "Indonesia",
-    image: "/img/placeholder3.png",
+    image: "./img/placeholder3.png",
     price: 270.0,
     priceBase: 1100.0,
     taxes: 160.0,
