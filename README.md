@@ -68,7 +68,7 @@ npm run build
 
 ## 🚀 Demo en GitHub Pages
 
-[https://jorge-r-rodriguez.github.io/accessibility-app/](https://jorge-r-rodriguez.github.io/accessibility-app/)
+<a href="https://jorge-r-rodriguez.github.io/accessibility-app/" target="_blank" rel="noopener noreferrer">https://jorge-r-rodriguez.github.io/accessibility-app/</a>
 
 
 ## 📝 Licencia
